@@ -1,0 +1,15 @@
+FROM ubuntu:latest
+
+# wget and git
+RUN apt-get update -y && apt-get install git wget bzip2 build-essential libgtk2.0-dev -y
+RUN wget https://storage.googleapis.com/golang/go1.7.3.linux-amd64.tar.gz
+
+# installing go1.7
+RUN tar -xf go1.7.3.linux-amd64.tar.gz
+RUN mv go /usr/local
+
+# Configuring go
+ENV GOROOT "/usr/local/go"
+ENV PATH "$GOPATH/bin:$GOROOT/bin:$PATH"
+ENV GOPATH "/opt/go"
+RUN mkdir /opt/go
