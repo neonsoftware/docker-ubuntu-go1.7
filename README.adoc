@@ -1,0 +1,20 @@
+# docker-ubuntu-go1.7
+Docker images for Ubuntu + go1.7 on different architectures (x86, i386 and arm) 
+
+All available on Dockerhub.
+
+
+ARM https://hub.docker.com/r/thsfewer/ubuntu-arm-go1.7/[on Dockerhub]
+----
+docker pull thsfewer/ubuntu-arm-go1.7
+----
+
+i386 https://hub.docker.com/r/thsfewer/ubuntu-i386-go1.7/[on Dockerhub]
+----
+docker pull thsfewer/ubuntu-i386-go1.7
+----
+x86 https://hub.docker.com/r/thsfewer/ubuntu-i386-go1.7/[on Dockerhub]
+
+----
+docker pull thsfewer/ubuntu-x86-go1.7
+----
